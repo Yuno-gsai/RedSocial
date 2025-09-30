@@ -1,0 +1,139 @@
+/* Contenedor principal */
+.contenedor-mensajes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  background-color: #121212; /* Fondo oscuro */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Lista de amigos */
+.lista-amigos {
+  width: 30%;
+  min-width: 300px;
+  background-color: #181818; /* Fondo más oscuro */
+  border-right: 1px solid #333; /* Borde más oscuro */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.lista-amigos h2 {
+  margin: 16px;
+  font-size: 1.25rem;
+  color: #e1e8ed; /* Texto claro */
+}
+
+/* Amigo individual */
+.amigo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #333; /* Borde más oscuro */
+  transition: background-color 0.2s;
+}
+
+.amigo-item:hover {
+  background-color: #2c2c2c; /* Fondo más oscuro al pasar el mouse */
+}
+
+.amigo-item.seleccionado {
+  background-color: #1a3a4a; /* Azul oscuro para selección */
+}
+
+.amigo-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.amigo-nombre {
+  font-weight: 600;
+  color: #e1e8ed; /* Texto claro */
+  font-size: 1rem;
+}
+
+.amigo-ultimo-mensaje {
+  font-size: 0.875rem;
+  color: #a0a0a0; /* Texto gris claro */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Chat panel */
+.panel-chat {
+  flex: 1;
+  background-color: #121212; /* Fondo oscuro */
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-seleccionar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d; /* Texto gris más claro */
+  font-size: 1rem;
+}
+
+/* Avatar con badge */
+.MuiBadge-root {
+  margin-right: 12px;
+}
+
+.MuiAvatar-root {
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: cover;
+}
+
+.MuiBadge-badge {
+  font-size: 0.75rem;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  font-weight: 700;
+  top: 6px;
+  right: 6px;
+  background-color: #e0245e; /* Rojo Twitter */
+  color: white;
+  border: 2px solid #121212; /* Borde oscuro */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-mensajes {
+    flex-direction: column;
+  }
+
+  .lista-amigos,
+  .panel-chat {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    max-height: 50vh;
+  }
+
+  .panel-chat {
+    flex: 1;
+    max-height: calc(100vh - 50vh);
+    min-height: auto;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .contenedor-mensajes {
+    margin-left: 250px; /* igual al ancho de tu LeftBar */
+    width: calc(100% - 250px); /* evitar que se pase */
+  }
+}

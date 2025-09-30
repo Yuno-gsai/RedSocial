@@ -1,0 +1,86 @@
+/* Contenedor principal */
+.config-container {
+    max-width: 500px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: #181818; /* Fondo oscuro */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: "Segoe UI", sans-serif;
+    color: #e1e8ed; /* Texto claro */
+    box-sizing: border-box;
+  }
+  
+  /* Títulos */
+  .config-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1DA1F2; /* Azul Twitter */
+    text-align: center;
+  }
+  
+  .config-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+    color: #1DA1F2; /* Azul Twitter */
+  }
+  
+  /* Inputs */
+  .config-container input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border: 1px solid #333; /* Borde más oscuro */
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .config-container input[type="password"]:focus {
+    outline: none;
+    border-color: #1da1f2;
+    box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.2);
+  }
+  
+  /* Botones */
+  .config-container button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+  }
+  
+  .config-container button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Botón cambiar contraseña */
+  .config-container .btn-change-password {
+    background-color: #1DA1F2; /* Azul Twitter */
+    color: white;
+  }
+  
+  /* Botón eliminar cuenta */
+  .config-container .btn-delete-account {
+    background-color: #e0245e;
+    color: white;
+  }
+  
+  /* Mensajes */
+  .config-container .status {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .config-container .status.success {
+    color: #17bf63; /* Verde Twitter */
+  }
+  
+  .config-container .status.error {
+    color: #e0245e; /* Rojo Twitter */
+  }

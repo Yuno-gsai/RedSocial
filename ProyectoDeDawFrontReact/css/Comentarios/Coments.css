@@ -1,0 +1,78 @@
+.comentario {
+  position: relative; /* Para posicionar el botón dentro */
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #333; /* Borde más oscuro para modo oscuro */
+  align-items: flex-start;
+}
+
+.comentario-foto {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comentario-texto {
+  flex: 1;
+  position: relative; /* Para el botón absolute */
+}
+
+.comentario-texto strong {
+  font-weight: 600;
+  color: #e1e8ed; /* Texto claro */
+}
+
+.comentario-texto p {
+  margin: 4px 0 20px 0; /* espacio abajo para que el botón no tape texto */
+  color: #a0a0a0; /* Texto gris claro */
+  white-space: pre-wrap;
+}
+
+.comentario-texto small {
+  color: #6c757d; /* Texto gris más claro */
+  font-size: 11px;
+}
+
+/* Botón eliminar pequeño y camuflado, posicionado absoluto arriba a la derecha */
+.EliminarButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #6c757d; /* Texto gris más claro */
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+
+
+.perfil-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.perfil-foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #1DA1F2; /* Azul Twitter */
+}
+
+.perfil-nombre {
+  font-weight: 600;
+  color: #e1e8ed; /* Texto claro */
+  font-size: 1rem;
+}
+
+

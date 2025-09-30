@@ -1,0 +1,51 @@
+.nuevo-comentario-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .comentario-textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #333; /* Borde más oscuro para modo oscuro */
+    background-color: #181818; /* Fondo oscuro */
+    color: #e1e8ed; /* Texto claro */
+    resize: none;
+    width: 100%;
+  }
+  
+  .comentarios-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-enviar-comentario, .btn-cancelar-comentario {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .btn-enviar-comentario {
+    background-color: #1DA1F2; /* Azul Twitter */
+    color: white;
+  }
+  
+  .btn-enviar-comentario:hover {
+    background-color: #1a8cd8; /* Azul Twitter más oscuro */
+  }
+  
+  .btn-cancelar-comentario {
+    background-color: #e0245e; /* Rojo Twitter */
+    color: white;
+  }
+  
+  .btn-cancelar-comentario:hover {
+    background-color: #b91d51; /* Rojo Twitter más oscuro */
+  }
+  

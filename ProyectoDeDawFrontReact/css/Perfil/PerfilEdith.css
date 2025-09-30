@@ -1,0 +1,150 @@
+.profile-container {
+  background-color: #181818; /* Fondo oscuro */
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 850px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Título */
+.profile-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #e1e8ed; /* Texto claro */
+}
+
+/* Estilo general del formulario */
+.edit-profile-form label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+  color: #e1e8ed; /* Texto claro */
+  font-size: 0.95rem;
+}
+
+/* Inputs de texto, contraseña, textarea */
+.edit-profile-form input[type="text"],
+.edit-profile-form input[type="password"],
+.edit-profile-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 1px solid #333; /* Borde más oscuro */
+  background-color: #121212; /* Fondo más oscuro para inputs */
+  color: #e1e8ed; /* Texto claro */
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-profile-form input:focus,
+.edit-profile-form textarea:focus {
+  outline: none;
+  border-color: #1DA1F2; /* Azul Twitter */
+  box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.3);
+}
+
+/* Subida de archivo */
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  color: #fff; /* Texto blanco */
+  background-color: #1da1f2;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #1a8cd8; /* Azul Twitter más oscuro */
+}
+
+/* Vista previa */
+.preview {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.preview p {
+  font-size: 14px;
+  color: #a0a0a0; /* Texto gris claro */
+  margin-bottom: 10px;
+}
+
+.preview img {
+  max-width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones */
+.btn-group {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.buttonClass,
+.btn-cancel {
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  min-width: 130px;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Botones principales */
+.buttonClass {
+  background-color: #1DA1F2; /* Azul Twitter */
+}
+
+.buttonClass:hover {
+  background-color: #1a8cd8; /* Azul Twitter más oscuro */
+}
+
+/* Botón cancelar */
+.btn-cancel {
+  background-color: #e0245e; /* Rojo Twitter */
+}
+
+.btn-cancel:hover {
+  background-color: #b91d51; /* Rojo Twitter más oscuro */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttonClass,
+  .btn-cancel {
+    width: 100%;
+    min-width: unset;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,76 @@
+/* Contenedor del formulario */
+.login-form {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    background: #181818; /* Fondo oscuro */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+  .login-input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #333; /* Borde más oscuro */
+    background-color: #121212; /* Fondo más oscuro para inputs */
+    color: #e1e8ed; /* Texto claro */
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    outline: none;
+  }
+  
+  .login-input:focus {
+    border-color: #1DA1F2; /* Azul Twitter */
+    box-shadow: 0 0 8px rgba(29, 161, 242, 0.3);
+  }
+  
+  /* Botones */
+  .login-btn {
+    padding: 0.85rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Botón principal: Iniciar sesión */
+  .login-btn-primary {
+    background-color: #1DA1F2; /* Azul Twitter */
+    color: white;
+  }
+  
+  .login-btn-primary:hover {
+    background-color: #1a8cd8; /* Azul Twitter más oscuro */
+  }
+  
+  /* Botón secundario: Registrarse */
+  .login-btn-secondary {
+    background-color: transparent;
+    color: #1DA1F2; /* Azul Twitter */
+    border: 2px solid #1DA1F2; /* Azul Twitter */
+  }
+  
+  .login-btn-secondary:hover {
+    background-color: #1DA1F2; /* Azul Twitter */
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .login-form {
+      margin: 2rem 1rem;
+      padding: 1.5rem 1.8rem;
+    }
+  
+    .login-input, .login-btn {
+      font-size: 0.9rem;
+      padding: 0.7rem 1rem;
+    }
+  }
+  

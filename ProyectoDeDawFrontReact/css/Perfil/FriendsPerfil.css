@@ -1,0 +1,173 @@
+/* Friends Perfil Container */
+.friends-perfil-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f7fa;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.friends-perfil-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #181818;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  position: relative;
+  color: #e1e8ed;
+}
+
+/* Close Button */
+.friends-perfil-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.friends-perfil-close:hover {
+  background: #ff3333;
+}
+
+/* Header Section */
+.friends-perfil-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2f3336;
+}
+
+/* Avatar */
+.friends-perfil-avatar {
+  margin-bottom: 20px;
+}
+
+.friends-perfil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1DA1F2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* User Info */
+.friends-perfil-info {
+  width: 100%;
+  max-width: 600px;
+}
+
+.friends-perfil-username {
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: #e1e8ed;
+}
+
+.friends-perfil-email {
+  color: #8b98a5;
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+
+.friends-perfil-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  color: #8b98a5;
+  font-size: 14px;
+}
+
+/* Bio Section */
+.friends-perfil-bio {
+  background: #1e2732;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.friends-perfil-bio h3 {
+  margin: 0 0 10px;
+  color: #e1e8ed;
+  font-size: 16px;
+}
+
+.friends-perfil-bio p {
+  margin: 0;
+  color: #8b98a5;
+  line-height: 1.5;
+}
+
+/* Posts Section */
+.friends-perfil-posts {
+  margin-top: 30px;
+}
+
+.friends-perfil-section-title {
+  font-size: 22px;
+  color: #e1e8ed;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2f3336;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .friends-perfil-header {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .friends-perfil-avatar {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  
+  .friends-perfil-info {
+    padding-top: 20px;
+  }
+  
+  .friends-perfil-meta {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .friends-perfil-content {
+    padding: 20px 15px;
+  }
+  
+  .friends-perfil-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .friends-perfil-username {
+    font-size: 24px;
+  }
+  
+  .friends-perfil-email {
+    font-size: 14px;
+  }
+}
